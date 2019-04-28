@@ -9,7 +9,7 @@ public class Main {
         System.out.println("Wynik: "+qf.getYpeekFunction());
         System.out.println("X range [ "+qf.getRangeMIN()+" ; "+qf.getRangeMAX()+" ]");
         try {
-            GeneticAlgorithm ga = new GeneticAlgorithm(4,0.9,0.1,0.00001,qf);
+            GeneticAlgorithm ga = new GeneticAlgorithm(100,0.9,0.1,0.00001,qf);
         } catch (InvalidValueProbabilityOfCrossingException | InvalidValueProbabilityOfMutation e) {
             e.printStackTrace();
         }
